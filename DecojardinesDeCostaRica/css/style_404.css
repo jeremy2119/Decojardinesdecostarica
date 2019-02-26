@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    background-image: url(../img/404-b.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    font-weight: 300;
+    /*text-shadow: 0px 0px 10px black;*/
+}
+
+
+.form-control {
+    outline: none;
+    color: white;
+}
+
+#texto_solicitud {
+    resize: none;
+    overflow: hidden;
+    color: white;
+    transition: 0.5s;
+
+}
+
+#form_solicitud {
+    box-shadow: 0px 0px 60px 0px black;
+    border-radius: 10px;
+}
+
+
+
+.bg-green {
+    background-color: rgb(53, 183, 113);
+}
+
+.border-green {
+    border-color: rgb(53, 183, 113);
+}
+
+
+.separator {
+    line-height: 0.5;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.separator span {
+    display: inline-block;
+    position: relative;
+}
+.separator span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.separator span i{
+    color:  rgb(53, 183, 113);
+}
+.fa-circle:before {
+    content: "■";
+}
+.separator>span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+.separator>span:before, .separator span:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    top: 5px;
+    width: 700%;
+}
+
+#ejecutar{
+    border: 2px solid rgb(53, 183, 113);
+    ;
+    padding: 8px;
+    color: rgb(53, 183, 113);
+    ;
+    font-family: "Open Sans", sans-serif;
+}
+
+#boton-cotizacion img {
+    width: 20px;
+}
+
+
+.form-control:focus {
+    border-color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: white;
+}
+
+#respaldo {
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+.toggle {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50px;
+    height:50px;
+    background-color: transparent;
+    cursor:pointer;
+    overflow:hidden;
+}
+.toggle span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(0deg);
+    width:calc(100% - 14px);
+    height:3px;
+    background: white;
+    box-shadow: 0 -12px 0 white,0 12px white;
+    transition-property:transform, box-shadow;
+    transition-delay:0s,1s;
+    transition-duration:0.5s,0.5s;
+}
+.toggle.active span {
+    box-shadow: 50px -12px 0 white,-50px 12px 0 white;
+    transform:translate(-50%,-50%) rotate(-315deg);
+    transition-property:box-shadow, transform;
+    transition-delay:0s,0.5s;
+    transition-duration:0.5s,0.5s;
+}
+.toggle span:before {
+    content:'';
+    position:absolute;
+    top:-50px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:3px;
+    height:36px;
+    background: white;
+    transition:0.5s;
+    transition-delay:0.5s;
+}
+.toggle.active span:before {
+    top:50%;
+    transition-delay:1s;
+}
+
+nav-black{
+    background-color: black;
+}
+
+#logo_nav2{
+    display: none
+}
+@media (max-width: 768px) {
+    
+    nav{
+        background-color: black;
+    }
+    #a_img_1{
+        display: none
+    }
+    #logo_nav2{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    #a_img_2{
+        display: none;
+    }
+}
+.boton-menu{
+    font-family: 'Dosis';
+}
+/*::-webkit-input-placeholder { color: red; } 
+ 
+:-moz-placeholder { /* Firefox 18-  color: red; } 
+ 
+::-moz-placeholder { /* Firefox 19+  color: red; } 
+ 
+:-ms-input-placeholder { color: red; }*/
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}

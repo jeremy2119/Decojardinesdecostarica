@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+html{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+body{
+    background-color: rgb(19, 19, 21);
+    min-width: 100%;
+    padding: 0;
+
+}
+
+nav{
+    transition: 0.5s;
+}
+
+main.container{
+    background-color: rgb(19, 19, 21);
+    padding: 0;
+    min-width: 100%;
+}
+
+#img1{
+    height: 100vh;
+    background-image: url(../img/cscs/28112018-jardineria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.texto-slide{
+    color: black;
+    font-family: "Dosis", sans-serif;
+    font-size: 40px;
+    letter-spacing: 8px;
+    width: 90%;
+    height: 10vh;
+    margin: 40vh 5%;
+    text-align: center;
+    font-weight: 300;
+}
+@media only screen and (max-width: 400px) {
+    .texto-slide{
+        font-size: 25px;
+    }
+}
+#img2{
+    background-image: url(../img/cscs/27112018-imagen-jardineria.jpg);
+    background-size: cover;
+    background-position: top;
+    transition: 0.5s;
+}
+
+.imagen{
+    border-radius: 10px;
+    box-shadow: 0px 0px 60px 0px black;
+}
+#div1{
+    background-color: rgb(17,17,17);
+    color: white;
+    transition: 0.5s;
+}
+
+#quienes_somos{
+    transition: 0.5s;
+}
+
+#p1{
+    transition: 0.5s;
+}
+
+#div2{
+    background-color: rgb(24,25,27);
+    color: white;
+}
+
+h1, h2{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    padding: 10px;
+    font-weight: 300;
+}
+
+h4{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+h3{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+.first{
+    color: rgb(59,165,90); 
+}
+
+.servicios-info{
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    border-top-color: white;
+    border-radius: 0px;
+}
+
+.row{
+    margin: 0;
+}
+
+.line{
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+    width: 1px;
+    height: 8vh;
+    background-color: lightgoldenrodyellow;
+    display: none;
+}
+
+#line1{
+    display: block;
+}
+
+.circle-text {
+     content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 98%;
+    border: solid white;
+    background-color: transparent; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    border-width: 2px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 60px -5px black;
+}
+.circle-text div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:2em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+.circle-text:focus{
+    outline: 0;
+}
+#boton-servicio1.collapsed{
+    background-image: url(../img/cscs/28112018-dise%C3%B1o.jpg);
+}
+#boton-servicio2.collapsed{
+    background-image: url(../img/cscs/28112018-mantenimiento.jpg);
+}
+#boton-servicio3.collapsed{
+    background-image: url(../img/cscs/16072017-plantas.jpg);
+}
+.collapsed{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    border-color: transparent;
+}
+
+#servicios-responsive{
+    display: none;
+}
+
+#servicios-responsive > div > h2 {
+    border-bottom: 1px solid rgb(59,165,90);
+}
+
+#servicios-responsive > div > p{
+    color: white;
+}
+#servicios, #servicios-responsive{
+    background-image: url(../img/cscs/29112018-podadora.jpg);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 945px) {
+    
+    #servicios{
+        display: none;
+    }
+    #servicios-responsive{
+        display: flex;
+    }
+}
+#contenedor-texto-servicios{
+    height: 30vh;
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+}
+#texto-servicio1{
+    display: block;
+}
+.separator {
+    line-height: 0.5;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.separator span {
+    display: inline-block;
+    position: relative;
+}
+.separator span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.separator span i{
+    color:  rgb(53, 183, 113);
+}
+.fa-circle:before {
+    content: "■";
+}
+.separator>span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+.separator>span:before, .separator span:after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    top: 5px;
+    width: 1000%;
+}
+
+@media only screen and (max-width: 600px) {
+    .separator{
+        display: none;
+    }
+}
+#cotizacion{
+    background-color: rgb(59,165,90);
+}
+#boton-cotizacion{
+    background-color: rgb(59,165,90);
+    border: 2px solid white;
+    padding: 8px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+#boton-cotizacion img{
+    width: 20px;
+}
+#galeria-proyectos{
+    background-color: rgb(24,25,27); 
+}
+.galeria{
+    padding: 0;
+}
+
+.full-image{
+    padding: 5vh;
+}
+
+@media only screen and (min-width: 1400px) {
+
+.par{
+    font-size: 1.2vw;
+    font-weight: 100;
+    box-sizing: inherit;
+}
+}
+.titulo-res{
+    text-transform: uppercase;
+}
+.txt-res{
+    height: 95px;
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .txt-res{
+    height: 135px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .txt-res{
+    height: 105px;
+}
+}
+
+@media only screen and (max-width: 576px) {
+    .txt-res{
+    height: 165px;
+}
+}
+
+
+
+#resenas{
+    background-image: url(../img/paisajismo.jpg);
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    height: auto;
+    margin: auto;
+    
+}
+
+.resena{
+    background-color: black;
+    color: white;
+     box-shadow: 0px 0px 60px -5px black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#icono-resena{
+    background-color: rgb(59,165,90);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    float: right;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin: -50px -30px 50px 50px;
+}
+
+#div-img-contacto{
+    background-image: url(../img/cscs/27112018-imagen-jardineria.jpg)
+}
+
+#footer{
+    background-color: rgb(19, 19, 21);
+    box-sizing: border-box;
+}
+
+.lightbox{
+    transition: 0.5s;
+}
+.lightbox:hover{
+    opacity: 0.8;
+    transition: 0.5
+}
+
+
+.black{
+    background-color: black;
+}
+
+
+/*boton menu*/
+
+.toggle {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50px;
+    height:50px;
+    background-color: transparent;
+    cursor:pointer;
+    overflow:hidden;
+}
+.toggle span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) rotate(0deg);
+    width:calc(100% - 14px);
+    height:3px;
+    background: white;
+    box-shadow: 0 -12px 0 white,0 12px white;
+    transition-property:transform, box-shadow;
+    transition-delay:0s,1s;
+    transition-duration:0.5s,0.5s;
+}
+.toggle.active span {
+    box-shadow: 50px -12px 0 white,-50px 12px 0 white;
+    transform:translate(-50%,-50%) rotate(-315deg);
+    transition-property:box-shadow, transform;
+    transition-delay:0s,0.5s;
+    transition-duration:0.5s,0.5s;
+}
+.toggle span:before {
+    content:'';
+    position:absolute;
+    top:-50px;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:3px;
+    height:36px;
+    background: white;
+    transition:0.5s;
+    transition-delay:0.5s;
+}
+.toggle.active span:before {
+    top:50%;
+    transition-delay:1s;
+}
+
+nav-black{
+    background-color: black;
+}
+
+#logo_nav2{
+    display: none
+}
+@media (max-width: 768px) {
+    
+    nav{
+        background-color: black;
+    }
+    #a_img_1{
+        display: none
+    }
+    #logo_nav2{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    #a_img_2{
+        display: none;
+    }
+}
+.boton-menu{
+    font-family: 'Dosis';
+}
